@@ -53,7 +53,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://factory.charonne.io/blockpayment/laravel/public/'),
+    'url' => env('APP_URL', 'http://block-payment.democrypt.com/'),
 
     /*
     |--------------------------------------------------------------------------
