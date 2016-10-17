@@ -15,11 +15,12 @@ class CreatePaymentTable extends Migration
     {
         Schema::create('blp_payment', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('title');
             $table->integer('nb_address');
-            $table->string('id_key')->index();
             $table->string('nb_participant');
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
+            $table->string('id_key')->index();
             $table->string('status');
         });
     }

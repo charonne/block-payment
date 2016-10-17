@@ -41,7 +41,7 @@ class AddressController extends Controller
             );
         } else {
             // View
-            $validator->errors()->add('bitcoin_address', 'The bitcoin address is invalid.');
+            $validator->errors()->add('code', 'The payment code is invalid.');
             return redirect('/')
                         ->withErrors($validator)
                         ->withInput();

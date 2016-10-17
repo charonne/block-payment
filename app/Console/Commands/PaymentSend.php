@@ -114,7 +114,6 @@ class PaymentSend extends Command
 				$paymentAmounts = implode (',', $values);
                 
                 // Send payment
-                /*
                 $this->line('Lot: ' . $i . '/' . count($chunks) . ', ' . $sum . ' BTC');
                 $blockTx = $block_io->withdraw_from_addresses(array(
                     'amounts' => $paymentAmounts,
@@ -130,7 +129,6 @@ class PaymentSend extends Command
                     $this->error("Lot " . $i . " failed");
                     print_r($blockTx);
                 }
-                */
             } catch (error $e) {
 				$this->writeln("ERROR $i: ". $e->getMessage() . "\n<br />\n");
 			}

@@ -31,8 +31,9 @@
         @if (Route::has('login'))
             <div class="top-right links">
                 @if (Auth::check())
+                    <a href="{{ url('/') }}">Home</a>
                     <a href="{{ url('/payment') }}">Payments</a>
-                <a href="{{ url('/logout') }}">Logout</a>
+                    <a href="{{ url('/logout') }}">Logout</a>
                 @endif
                 {{--
                     @else
