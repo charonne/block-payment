@@ -3,6 +3,7 @@
     Block Payment is a simple app to make bitcoin payments to a group of people. It is used as an exercice to understand bitcoin.<br />
     The app can send small amounts to a group of people, and people have to send the amount back.
 </p>
+<p>
     Block Payment is developped with <a href="https://www.block.io/">Block.io</a> the wallet services, the PHP Framework Laravel, Bootstrap, and SQLite.
 </p>
 <h1>Usage</h1>
